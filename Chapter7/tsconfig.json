@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"outDir": "dist/",
+		"sourceMap": true,
+		"target": "esnext"
+	},
+	"include": [
+		"./village.ts"
+	]
+}
