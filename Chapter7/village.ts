@@ -43,6 +43,12 @@ class VillageState{
 
 const roadGraph = buildGraph(roads);
 console.log(`roadGraph ${JSON.stringify(roadGraph)}`);
+
+Object.keys(roadGraph).map(
+    place => {
+        console.log(`${place} : [ ${roadGraph[place]} ]`);
+    }
+)
 let first = new VillageState(
     "Post Office",
     [{place: "Post Office", address:"Alice's House"}]
