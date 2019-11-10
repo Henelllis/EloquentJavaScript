@@ -51,9 +51,17 @@ Object.keys(roadGraph).map(
 )
 let first = new VillageState(
     "Post Office",
-    [{place: "Post Office", address:"Alice's House"}]
+    [{place: "Post Office", address:"Alice's House"},
+     {place: "Alice's House", address:"Bob's House"}]
 )
 let next = first.move("Alice's House")
 console.log(next.place)
 console.log(next.parcels)
 console.log(first.place)
+
+let next2 = next.move("Bob's House")
+console.log("Move to ALices house")
+
+console.log(next2.place)
+console.log(next2.parcels)
+console.log(next2.place)
